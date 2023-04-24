@@ -2,8 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   server: {
-    host: process.env.NUXT_HOST,
-    port: process.env.NUXT_PORT,
+    port: 3030,
   },
   head: {
     titleTemplate: '%s - blockAids',
