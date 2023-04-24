@@ -1,7 +1,7 @@
-FROM node:18-alpine3.9
+FROM node:18-alpine
 
-RUN mkdir -p /var/www/dockerize-nuxt/nuxt-app
-WORKDIR /var/www/dockerize-nuxt/nuxt-app
+RUN mkdir -p /var/www/nft.blockaids.online/nuxt-app
+WORKDIR /var/www/nft.blockaids.online/nuxt-app
 
 COPY package*.json ./
 RUN npm install
