@@ -1,6 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  server: {
+    port: 3030,
+  },
   head: {
     titleTemplate: '%s - blockAids',
     title: 'blockAids',
