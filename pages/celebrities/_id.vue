@@ -1,17 +1,19 @@
 <template>
   <v-row>
     <CelebritiesGenerator/>
-    <PartnersComponent/>
+    <NFTCollectionComponent/>
+<!--    <PartnersComponent/>-->
   </v-row>
 </template>
 
 <script>
 import CelebritiesGenerator from "../../components/Generators/CelebritiesGenerator";
 import PartnersComponent from "../../components/PartnersComponent";
+import NFTCollectionComponent from "../../components/NFTs/NFTCollectionComponent";
 
 export default {
   name: "_id",
-  components: {CelebritiesGenerator, PartnersComponent},
+  components: {CelebritiesGenerator, PartnersComponent, NFTCollectionComponent},
 }
 </script>
 

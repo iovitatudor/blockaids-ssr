@@ -1,6 +1,6 @@
 <template>
   <v-col class="nft-collection-item" md="4">
-    <img :src="`/images/${item.image}`" alt="">
+    <img :src="`/images/collections/${item.image}`" class="collection-image" width="90%"/>
     <v-btn to="/checkout">Get this NFT</v-btn>
   </v-col>
 </template>
@@ -16,8 +16,9 @@ export default {
 .nft-collection-item {
   padding: 2em;
 
+
   img {
-    height: 300px;
+    //height: 300px;
     margin-bottom: 30px;
   }
 }

@@ -3,17 +3,26 @@
     <v-col md="12">
       <h3>{{ title }}</h3>
     </v-col>
-    <CelebrityItemComponent v-for="i in 8"/>
+    <CelebrityItemComponent v-for="(celebrity, key) in celebrities" :key="key" :celebrity="celebrity"/>
   </v-row>
 </template>
 
 <script>
 import CelebrityItemComponent from "./CelebrityItemComponent";
-
+import celebrities from "../../api/celebrieties.json";
 export default {
   components: {CelebrityItemComponent},
   name: "CelebritiesComponent",
   props: {title: String},
+  data() {
+    return {
+      celebrities: [],
+    }
+  },
+  mounted() {
+    this.celebrities = celebrities.data;
+    // console.log(celebrities);
+  }
 }
 </script>
 
