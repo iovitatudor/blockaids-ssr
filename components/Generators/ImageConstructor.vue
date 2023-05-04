@@ -27,12 +27,25 @@
               @mouseout="mouseout"
       ></canvas>
     </v-col>
+    <v-col md="12" class="text-center" v-if="readyToDownload">
+      <v-btn @click="mint">Mint Avatar</v-btn>
+      <br> <br>
+      <p v-if="mintResponse">Minted on: {{ mintResponse.onChain.contractAddress }}</p>
+    </v-col>
+    <v-col md="12" class="text-center" v-if="mintResponse">
+      <h4>You can donate to support the project:</h4> <br><br>
+      <Donate/>
+    </v-col>
   </v-row>
 </template>
 
 <script>
+import axios from "axios";
+import Donate from "../Donate";
+
 export default {
   name: "ImageConstructor",
+  components: {Donate},
   data() {
     return {
       canvas: null,
@@ -48,9 +61,44 @@ export default {
       currentB: 0,
       previewImage: null,
       readyToDownload: false,
+      mintResponse: null,
     };
   },
   methods: {
+    async mint() {
+      this.mintResponse = null;
+      const dataURL = this.canvas.toDataURL("image/png", 1.0);
+
+      const collectionId = 'ac541b46-b715-4b2c-9cff-30ff824591d4';
+
+      const recipient = 'polygon:0xD1414DF3CB293AAe9a12A9e20FAA6a5fE67448C4';
+
+      try {
+        const response = await axios.post(
+          `https://staging.crossmint.com/api/2022-06-09/collections/${collectionId}/nfts`,
+          {
+            'recipient': recipient,
+            'metadata': {
+              'name': 'Test NFT Minted',
+              'image': 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg',
+              'description': 'Test NFT Minted Description',
+            }
+          },
+          {
+            headers: {
+              'accept': 'application/json',
+              'content-type': 'application/json',
+              'x-client-secret': 'sk_test.0191af3f.453f08fda3444cf03b7092cd98f2f92e',
+              'x-project-id': '5db583f6-b4bf-485b-b5ae-2143e5f8565b'
+            }
+          }
+        );
+        this.mintResponse = response.data;
+
+      } catch (e) {
+
+      }
+    },
     download() {
       const dataURL = this.canvas.toDataURL("image/jpeg", 1.0);
       this.downloadImage(dataURL, 'my-canvas.jpeg');

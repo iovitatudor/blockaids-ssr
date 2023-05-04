@@ -7,10 +7,10 @@
     </v-row>
     <ImageConstructor/>
     <v-row>
-      <v-col md="3" offset-md="5">
-        <p>Remember! All money from sold NFTs will be spent to help people living with HIV to get access to the global
-          electronic system, designed to stop AIDS by 2030</p>
-      </v-col>
+<!--      <v-col md="3" offset-md="5">-->
+<!--        <p>Remember! All money from sold NFTs will be spent to help people living with HIV to get access to the global-->
+<!--          electronic system, designed to stop AIDS by 2030</p>-->
+<!--      </v-col>-->
     </v-row>
     <AboutComponent/>
     <PartnersComponent/>
