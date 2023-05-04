@@ -24,7 +24,9 @@ export default {
 
   css: [],
 
-  plugins: [],
+  plugins: [
+    { src: '@plugins/crossmint.js', ssr: false },
+  ],
 
   components: true,
 

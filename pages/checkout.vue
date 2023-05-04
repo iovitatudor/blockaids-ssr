@@ -27,24 +27,28 @@
       </div>
 
       <div>
-        <v-select
-          :items="items"
-          label="Quantity"
-          density="Quantity"
-        ></v-select>
-        <v-btn block>Buy with credit card</v-btn>
-        <br>
-        <v-btn block>Buy with credit ETH</v-btn>
-        <br>
-        <v-btn block>Buy with credit SOL</v-btn>
+        <Checkout/>
+<!--        <v-select-->
+<!--          :items="items"-->
+<!--          label="Quantity"-->
+<!--          density="Quantity"-->
+<!--        ></v-select>-->
+<!--        <v-btn block>Buy with credit card</v-btn>-->
+<!--        <br>-->
+<!--        <v-btn block>Buy with credit ETH</v-btn>-->
+<!--        <br>-->
+<!--        <v-btn block>Buy with credit SOL</v-btn>-->
       </div>
     </v-col>
   </v-row>
 </template>
 
 <script>
+import Checkout from "../components/Checkout";
+
 export default {
   name: "checkout",
+  components: {Checkout},
   data() {
     return {
       items: [1, 2, 3, 4],
