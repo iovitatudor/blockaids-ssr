@@ -34,18 +34,18 @@
     </v-col>
     <v-col md="12" class="text-center" v-if="mintResponse">
       <h4>You can donate to support the project:</h4> <br><br>
-      <Donate/>
+<!--      <Donate/>-->
     </v-col>
   </v-row>
 </template>
 
 <script>
 import axios from "axios";
-import Donate from "../Donate";
+// import Donate from "../Donate";
 
 export default {
   name: "ImageConstructor",
-  components: {Donate},
+  // components: {Donate},
   data() {
     return {
       canvas: null,

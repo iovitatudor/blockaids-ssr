@@ -4,14 +4,14 @@
       <h3 class="text-center">NFT Checkout page</h3>
     </v-col>
     <v-col md="6" class="left-area">
-      <img src="/images/checkout-mock.png" alt="">
+      <img src="/images/collections/WAD22%20Poster%20A3_11.jpg" alt="">
       <h4>About the collection</h4>
-      <p>Contract Address: <i>4YDSS2321...</i></p>
+      <p>Contract Address: <i>0xf66cEb3148f573CcCCf28246F2Eb2AA9178C1668</i></p>
     </v-col>
     <v-col md="6" class="right-area">
       <h4>
-        <p>Chain: Solana</p>
-        <p>1.15 EUR</p>
+        <p>Chain: Polygon</p>
+        <p>0.10 USD</p>
       </h4>
       <h5>
         <p>Cyberpunk</p>

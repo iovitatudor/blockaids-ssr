@@ -2,24 +2,24 @@
   <v-row class="text-center">
     <v-col class="buttons-wrapper">
       <crossmint-pay-button
-        clientId="735125ed-e846-4111-adfa-8f9cad54a5c9"
-        mintConfig='{"type":"erc-721","totalPrice":"0.1","_quantity":"1","quantity":"1"}'
+        clientId="3bb175c4-97f6-46a7-a47b-aca37029590e"
+        mintConfig='{"type":"erc-721","totalPrice":"0.001","_quantity":"1","quantity":"1"}'
         environment="staging"
         paymentMethod="ETH"
         class="xmint-btn"
       />
 
       <crossmint-pay-button
-        clientId="735125ed-e846-4111-adfa-8f9cad54a5c9"
-        mintConfig='{"type":"erc-721","totalPrice":"0.1","_quantity":"1","quantity":"1"}'
+        clientId="3bb175c4-97f6-46a7-a47b-aca37029590e"
+        mintConfig='{"type":"erc-721","totalPrice":"0.001","_quantity":"1","quantity":"1"}'
         environment="staging"
         paymentMethod="SOL"
         class="xmint-btn"
       />
 
       <crossmint-pay-button
-        clientId="735125ed-e846-4111-adfa-8f9cad54a5c9"
-        mintConfig='{"type":"erc-721","totalPrice":"1","_quantity":"1","quantity":"1"}'
+        clientId="3bb175c4-97f6-46a7-a47b-aca37029590e"
+        mintConfig='{"type":"erc-721","totalPrice":"0.10","_quantity":"1","quantity":"1"}'
         environment="staging"
         class="xmint-btn"
       />
