@@ -1,51 +1,56 @@
 <template>
-  <v-row class="image-constructor">
-    <v-col>
-      <h3>Support people living with HIV, add our distinctive sign to Your avatar</h3>
-      <div class="step-item">
-        <span class="step-item-1">1</span
-        <div class="upload-btn-wrapper">
-          <button class="btn">Upload a file</button>
-          <input type="file" name="myFile" @change="uploadImage"/>
-        </div>
-      </div>
-      <div class="step-item">
-        <span class="step-item-2">2</span>
-        Place our distinctive sign on it
-      </div>
-      <div class="step-item">
-        <span class="step-item-3">3</span>
-        Download avatar
-        <v-btn v-if="readyToDownload" @click="download">Download</v-btn>
-      </div>
-    </v-col>
-    <v-col class="text-center">
-      <canvas id="canvas"
-              @mousedown="mousedown"
-              @mousemove="mousemove"
-              @mouseup="mouseup"
-              @mouseout="mouseout"
-      ></canvas>
-    </v-col>
-    <v-col md="12" class="text-center" v-if="readyToDownload">
-      <v-btn @click="mint">Mint Avatar</v-btn>
-      <br> <br>
-      <p v-if="mintResponse">Minted on: {{ mintResponse.onChain.contractAddress }}</p>
-    </v-col>
-    <v-col md="12" class="text-center" v-if="mintResponse">
-      <h4>You can donate to support the project:</h4> <br><br>
-<!--      <Donate/>-->
-    </v-col>
-  </v-row>
+  <div class="image-constructor">
+    <v-container>
+      <v-row>
+        <v-col>
+          <h3>Support people living with HIV, add our distinctive sign to Your avatar</h3>
+          <div class="step-item">
+            <span class="step-item-1">1</span>
+            <div class="upload-btn-wrapper">
+              <button class="btn">Upload a file</button>
+              <input type="file" name="myFile" @change="uploadImage"/>
+            </div>
+          </div>
+          <div class="step-item">
+            <span class="step-item-2">2</span>
+            Place our distinctive sign on it
+          </div>
+          <div class="step-item">
+            <span class="step-item-3">3</span>
+            Download avatar
+            <v-btn v-if="readyToDownload" @click="download">Download</v-btn>
+          </div>
+        </v-col>
+        <v-col class="text-center">
+          <canvas id="canvas"
+                  @mousedown="mousedown"
+                  @mousemove="mousemove"
+                  @mouseup="mouseup"
+                  @mouseout="mouseout"
+          ></canvas>
+        </v-col>
+        <v-col md="12" class="text-center" v-if="readyToDownload">
+          <v-btn @click="mint">Mint Avatar</v-btn>
+          <br> <br>
+          <p v-if="mintResponse">Minted on: {{ mintResponse.onChain.contractAddress }}</p>
+        </v-col>
+        <v-col md="12" class="text-center" v-if="mintResponse">
+          <h4>You can donate to support the project:</h4> <br><br>
+                <Donate/>
+        </v-col>
+      </v-row>
+    </v-container>
+
+  </div>
 </template>
 
 <script>
 import axios from "axios";
-// import Donate from "../Donate";
+import Donate from "../Donate";
 
 export default {
   name: "ImageConstructor",
-  // components: {Donate},
+  components: {Donate},
   data() {
     return {
       canvas: null,

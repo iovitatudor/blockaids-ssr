@@ -1,0 +1,60 @@
+* {
+  font-family: 'Satoshi-Variable';
+}
+
+html {
+  /*font-smooth: never !important;*/
+  -webkit-font-smoothing: inherit !important;
+}
+
+.btn-standart {
+  background-color: #3AB6AB !important;
+  box-shadow: 0px 6px 12px -6px rgba(58, 182, 171, 0.08), 0px 8px 24px -4px rgba(58, 182, 171, 0.08) !important;
+  border-radius: 8px !important;
+  color: #F3FBFB !important;
+  font-weight: 700 !important;
+  padding: 24px 32px !important;
+}
+
+.btn-standart-red {
+  background-color: #D31D24 !important;
+  box-shadow: 0px 6px 12px -6px rgba(58, 182, 171, 0.08), 0px 8px 24px -4px rgba(58, 182, 171, 0.08) !important;
+  border-radius: 8px !important;
+  color: #F3FBFB !important;
+  font-weight: 700 !important;
+  padding: 24px 32px !important;
+}
+
+.green-text {
+  color: #58CAC0 !important;
+}
+
+.red-text {
+  color: #D31D24 !important;
+}
+
+.desktop-only {
+  display: block !important;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  .btn-standart {
+    width: 100% !important;
+  }
+
+  .btn-standart-red {
+    width: 100% !important;
+  }
+}

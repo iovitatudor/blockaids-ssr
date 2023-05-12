@@ -1,27 +1,66 @@
 <template>
-  <v-app-bar
-    absolute
-    color="white"
-    elevate-on-scroll
-    scroll-target="#scrolling-techniques-7"
-  >
-    <v-spacer></v-spacer>
-    <NuxtLink to="/" class="logo">
-      <img src="images/logo.png" alt="">
-    </NuxtLink>
-    <v-spacer></v-spacer>
-    <v-spacer></v-spacer>
-    <v-spacer></v-spacer>
-    <v-spacer></v-spacer>
-    <NuxtLink to="/celebrities" class="menu-link">Celebrities</NuxtLink>
-    <NuxtLink to="/collections" class="menu-link">NFT Collection</NuxtLink>
-    <NuxtLink to="/generator" class="menu-link">Avatar Generator</NuxtLink>
-    <NuxtLink to="/" class="menu-link">About BlockAIDS</NuxtLink>
-    <NuxtLink to="/" class="menu-link">Docs</NuxtLink>
-    <!--      <v-app-bar-nav-icon></v-app-bar-nav-icon>-->
-    <v-spacer></v-spacer>
-    <v-spacer></v-spacer>
-  </v-app-bar>
+  <div class="header-menu">
+    <v-app-bar
+      absolute
+      color="white"
+      elevate-on-scroll
+      scroll-target="#scrolling-techniques-7"
+    >
+      <v-spacer class="menu-list-desktop"></v-spacer>
+      <NuxtLink to="/" class="logo">
+        <v-img src="images/logo.png" width="200px"></v-img>
+      </NuxtLink>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <div class="menu-list-desktop">
+        <div class="text-right">
+          <NuxtLink to="/collections" class="menu-link">NFT Collection</NuxtLink>
+          <a href="https://avatar.blockaids.online" class="menu-link">Avatar Generator</a>
+          <a href="https://blockaids.world" class="menu-link">About BlockAIDS</a>
+          <a href="https://blockaids.gitbook.io/blockaids-docs" class="menu-link">Docs</a>
+        </div>
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-app-bar-nav-icon class="menu-burgher-mobile" @click.stop="toggleMenu"></v-app-bar-nav-icon>
+
+    </v-app-bar>
+    <v-navigation-drawer
+      app
+      fixed
+      v-model="showMenu"
+      class="drawer-mobile"
+    >
+      <NuxtLink to="/" class="logo logo-drawer">
+        <v-img src="images/logo.png" width="200px"></v-img>
+      </NuxtLink>
+      <v-list dense>
+        <v-list-item>
+          <v-list-item-content>
+            <NuxtLink to="/collections" class="menu-link">NFT Collection</NuxtLink>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-content>
+            <a href="https://avatar.blockaids.online" class="menu-link">Avatar Generator</a>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-content>
+            <a href="https://blockaids.world/" class="menu-link">About BlockAIDS</a>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-content>
+            <a href="https://blockaids.gitbook.io/blockaids-docs/" class="menu-link">Docs</a>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+  </div>
 </template>
 
 <script>
@@ -29,26 +68,15 @@ export default {
   name: "Header",
   data() {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      showMenu: false,
     }
+  },
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
+    doNothing() {
+    },
   }
 }
 </script>
@@ -63,9 +91,46 @@ export default {
 
 .menu-link {
   margin: 0 15px;
+  color: #000 !important;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .main-area {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.v-toolbar__content {
+  box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+  padding: 35px 0;
+}
+
+.v-application a {
+  margin-right: 40px;
+}
+
+.menu-burgher-mobile {
+  display: none;
+}
+
+.logo-drawer {
+  .v-image {
+    margin: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-list-desktop {
+    display: none;
+  }
+  .menu-burgher-mobile {
+    display: block;
+  }
+  .v-toolbar__content {
+    padding: 0 15px;
+  }
+  .v-image {
+    width: 150px !important;
+  }
 }
 </style>

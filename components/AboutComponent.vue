@@ -1,15 +1,13 @@
 <template>
-  <v-row class="about-area">
-    <v-col md="6" class="text-left">
-      <h4>About BlockAIDS platform</h4>
+  <div class="about-area">
+    <div class="about-area-inside">
+      <h3>About BlockAIDS platform</h3>
       <p>A decentralized electronic ecosystem on the blockchain, that allows millions of people living with HIV to
         access their records, medicines, and services from any place in the world.</p>
-      <v-btn>Read more</v-btn>
-    </v-col>
-    <v-col md="6">
-      <img src="/images/image 53.png" alt="">
-    </v-col>
-  </v-row>
+      <v-img src="/images/image 52 1.png"></v-img>
+      <v-btn class="btn-standart">Read More</v-btn>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -20,25 +18,59 @@ export default {
 
 <style lang="scss" scoped>
 .about-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  background-color: #f3fbfb;
+  margin-top: 120px;
 
-  h4 {
-    font-size: 2em;
-    margin-bottom: 1.5em;
-    text-align: left;
+  .about-area-inside {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 104px;
+    padding-bottom: 120px;
+
+    h3 {
+      margin-bottom: 32px;
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #4D4D4D;
+    }
+
+    .v-image {
+      max-width: 532px;
+      margin: 56px auto;
+    }
   }
+}
 
-  p {
+@media only screen and (max-width: 600px) {
+  .about-area {
     text-align: left;
-    margin-bottom: 2em;
-  }
+    background-color: #f3fbfb;
+    margin-top: 40px;
 
-  img {
-    width: 80%;
-    border-radius: 30px 0 30px 30px;
+    .about-area-inside {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 40px 20px;
+      h3 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #4D4D4D;
+      }
+
+      .v-image {
+        max-width: 100% !important;
+        width: 80% !important;
+        margin: 30px auto;
+      }
+    }
   }
 }
 </style>

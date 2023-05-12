@@ -1,18 +1,18 @@
 <template>
-  <v-row>
+  <div>
     <BannerComponent/>
-    <ImageConstructor/>
-    <CelebritiesListComponent title="Celebrities supporting our initiative"/>
+    <HowWorksComponent/>
+    <GetExclusiveComponent/>
     <NFTCollectionComponent/>
     <AboutComponent/>
     <PartnersComponent/>
-  </v-row>
+  </div>
 </template>
 
 <script>
 import BannerComponent from "../components/BannerComponent";
-import ImageConstructor from "../components/Generators/ImageConstructor";
-import CelebritiesListComponent from "../components/Celebrities/CelebritiesListComponent";
+import HowWorksComponent from "../components/HowWorksComponent";
+import GetExclusiveComponent from "../components/GetExclusiveComponent";
 import NFTCollectionComponent from "../components/NFTs/NFTCollectionComponent";
 import AboutComponent from "../components/AboutComponent";
 import PartnersComponent from "../components/PartnersComponent";
@@ -21,8 +21,8 @@ export default {
   name: 'Home',
   components: {
     BannerComponent,
-    ImageConstructor,
-    CelebritiesListComponent,
+    HowWorksComponent,
+    GetExclusiveComponent,
     NFTCollectionComponent,
     AboutComponent,
     PartnersComponent,

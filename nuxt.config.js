@@ -6,8 +6,8 @@ export default {
     port: 3030,
   },
   head: {
-    titleTemplate: '%s - blockAids',
-    title: 'blockAids',
+    titleTemplate: '%s - BlockAids',
+    title: 'BlockAids - a decentralized electronic ecosystem on the blockchain,',
     htmlAttrs: {
       lang: 'en'
     },
@@ -18,14 +18,18 @@ export default {
       {name: 'format-detection', content: 'telephone=no'}
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      {rel: 'icon', type: 'image/x-icon', href: '/images/favicon_io/favicon.ico'}
     ]
   },
 
-  css: [],
+  css: [
+    'assets/fonts.css',
+    'assets/styles.css',
+  ],
 
   plugins: [
-    { src: '@plugins/crossmint.js', ssr: false },
+    // { src: '@plugins/crossmint.js', ssr: false },
+    // '@/plugins/web3'
   ],
 
   components: true,
