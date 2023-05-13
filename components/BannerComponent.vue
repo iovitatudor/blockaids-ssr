@@ -60,7 +60,7 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: #f3fbfb;
-  margin-top: 22px;
+  margin-top: 0px;
 
   h1 {
     font-size: 50px;

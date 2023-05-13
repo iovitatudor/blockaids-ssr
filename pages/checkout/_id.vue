@@ -2,20 +2,20 @@
   <div>
     <div class="checkout-area">
       <h3 class="text-center">Checkout</h3>
-      <v-container class="checkout-area-inside">
+      <v-container class="checkout-area-inside" v-if="ready">
         <v-row>
           <v-col md="5">
-            <v-img src="/images/collections/WAD22%20Poster%20A3_11.jpg" width="100%"></v-img>
+            <v-img :src="collection.image_name" width="100%"></v-img>
           </v-col>
           <v-col md="1"></v-col>
           <v-col md="5" class="checkout-details">
             <div>
-              <h4>People Before Profits: Share Medical Tech</h4>
-              <p class="collection">Green Collection</p>
-              <p class="price">$120</p>
+              <h4>{{ collection.name }}</h4>
+              <p class="collection">{{ collection.collection }}</p>
+              <p class="price">0.0001 ETH / 0.0005 SOL / 0.01 USD </p>
             </div>
-            <div>
-              <Checkout/>
+            <div class="checkout-area-wrapper">
+              <Checkout :collection="collection"/>
             </div>
           </v-col>
         </v-row>
@@ -27,21 +27,66 @@
 </template>
 
 <script>
-import Checkout from "../components/Checkout";
-import PartnersComponent from "../components/PartnersComponent";
+import PartnersComponent from "../../components/PartnersComponent";
+import Checkout from "../../components/Checkout";
+import MultiColorColl from "../../api/multicolor-coll.json"
+import BlueColl from "../../api/blue-coll.json"
+import GreenColl from "../../api/green-coll.json"
+import OrangeColl from "../../api/orange-coll.json"
+import PinkColl from "../../api/pink-coll.json"
+import RedColl from "../../api/red-coll.json"
 
 export default {
   name: "checkout",
-  components: {Checkout, PartnersComponent},
+  components: {PartnersComponent, Checkout},
   data() {
     return {
-      // items: [1, 2, 3, 4],
+      ready: false,
+      collection: {},
+      collections: [],
+      multiColorCollection: [],
+      greenCollection: [],
+      blueCollection: [],
+      orangeCollection: [],
+      pinkCollection: [],
+      redCollection: [],
     }
   },
+  mounted() {
+    try {
+      this.multiColorCollection = MultiColorColl;
+      this.greenCollection = GreenColl;
+      this.blueCollection = BlueColl;
+      this.orangeCollection = OrangeColl;
+      this.pinkCollection = PinkColl;
+      this.redCollection = RedColl;
+
+      this.collections = [
+        ...this.multiColorCollection,
+        ...this.greenCollection,
+        ...this.blueCollection,
+        ...this.orangeCollection,
+        ...this.pinkCollection,
+        ...this.redCollection
+      ];
+
+      const collectionId = $nuxt.$route.params.id;
+      this.collection =  this.collections.find(col => {
+        return col.id === collectionId;
+      });
+      this.ready = true;
+    } catch (e) {
+
+    }
+
+  }
 }
 </script>
 
 <style lang="scss">
+.main-area {
+  margin-top: 73px;
+}
 .checkout-area {
   padding-top: 80px;;
   background-color: #f3fbfb;
@@ -65,14 +110,14 @@ export default {
     }
 
     h4 {
-      font-size: 40px;
+      font-size: 30px;
       line-height: 1.3;
     }
 
     .collection {
       margin-top: 16px;
       color: #666666;
-      font-size: 24px;
+      font-size: 18px;
     }
 
     .price {
@@ -191,6 +236,12 @@ export default {
         margin: 2em;
       }
     }
+  }
+  .checkout-area-wrapper {
+    width: 100%;
+  }
+  .main-area {
+    margin-top: 53px;
   }
 }
 </style>

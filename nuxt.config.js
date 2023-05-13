@@ -27,10 +27,7 @@ export default {
     'assets/styles.css',
   ],
 
-  plugins: [
-    // { src: '@plugins/crossmint.js', ssr: false },
-    // '@/plugins/web3'
-  ],
+  plugins: [],
 
   components: true,
 

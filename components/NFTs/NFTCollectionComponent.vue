@@ -5,10 +5,11 @@
         <v-col md="12">
           <h3>Our NFT Collection</h3>
         </v-col>
-        <v-col md="12" class="collection-list-wrapper" v-if="blueCollection.length">
+
+        <v-col md="12" class="collection-list-wrapper" v-if="multiColorCollection.length">
           <VueSlickCarousel v-bind="settings">
-            <div class="collection-item-wrapper" v-for="(collection, key) in blueCollection" :key="key">
-              <NuxtLink to="/checkout">
+            <div class="collection-item-wrapper" v-for="(collection, key) in multiColorCollection" :key="key">
+              <NuxtLink :to="`/checkout/${collection.id}`">
                 <div class="collection-item">
                   <v-img :src="collection.image_name"></v-img>
                   <p class="collection-name">{{ collection.collection }}</p>
@@ -22,35 +23,7 @@
         <v-col md="12" class="collection-list-wrapper" v-if="greenCollection.length">
           <VueSlickCarousel v-bind="settings">
             <div class="collection-item-wrapper" v-for="(collection, key) in greenCollection" :key="key">
-              <NuxtLink to="/checkout">
-                <div class="collection-item">
-                  <v-img :src="collection.image_name"></v-img>
-                  <p class="collection-name">{{ collection.collection }}</p>
-                  <p class="name">{{ collection.name }}</p>
-                </div>
-              </NuxtLink>
-            </div>
-          </VueSlickCarousel>
-        </v-col>
-
-        <v-col md="12" class="collection-list-wrapper" v-if="orangeCollection.length">
-          <VueSlickCarousel v-bind="settings">
-            <div class="collection-item-wrapper" v-for="(collection, key) in orangeCollection" :key="key">
-              <NuxtLink to="/checkout">
-                <div class="collection-item">
-                  <v-img :src="collection.image_name"></v-img>
-                  <p class="collection-name">{{ collection.collection }}</p>
-                  <p class="name">{{ collection.name }}</p> {{ collection.id}} {{ collection.image_name }}
-                </div>
-              </NuxtLink>
-            </div>
-          </VueSlickCarousel>
-        </v-col>
-
-        <v-col md="12" class="collection-list-wrapper" v-if="pinkCollection.length">
-          <VueSlickCarousel v-bind="settings">
-            <div class="collection-item-wrapper" v-for="(collection, key) in pinkCollection" :key="key">
-              <NuxtLink to="/checkout">
+              <NuxtLink :to="`/checkout/${collection.id}`">
                 <div class="collection-item">
                   <v-img :src="collection.image_name"></v-img>
                   <p class="collection-name">{{ collection.collection }}</p>
@@ -64,7 +37,7 @@
         <v-col md="12" class="collection-list-wrapper" v-if="redCollection.length">
           <VueSlickCarousel v-bind="settings">
             <div class="collection-item-wrapper" v-for="(collection, key) in redCollection" :key="key">
-              <NuxtLink to="/checkout">
+              <NuxtLink :to="`/checkout/${collection.id}`">
                 <div class="collection-item">
                   <v-img :src="collection.image_name"></v-img>
                   <p class="collection-name">{{ collection.collection }}</p>
@@ -75,10 +48,48 @@
           </VueSlickCarousel>
         </v-col>
 
-
-        <v-col md="12" class="text-center">
-          <v-btn class="btn-standart">View All Collections</v-btn>
+        <v-col md="12" class="collection-list-wrapper" v-if="orangeCollection.length">
+          <VueSlickCarousel v-bind="settings">
+            <div class="collection-item-wrapper" v-for="(collection, key) in orangeCollection" :key="key">
+              <NuxtLink :to="`/checkout/${collection.id}`">
+                <div class="collection-item">
+                  <v-img :src="collection.image_name"></v-img>
+                  <p class="collection-name">{{ collection.collection }}</p>
+                  <p class="name">{{ collection.name }}</p>
+                </div>
+              </NuxtLink>
+            </div>
+          </VueSlickCarousel>
         </v-col>
+
+        <v-col md="12" class="collection-list-wrapper" v-if="pinkCollection.length">
+          <VueSlickCarousel v-bind="settings">
+            <div class="collection-item-wrapper" v-for="(collection, key) in pinkCollection" :key="key">
+              <NuxtLink :to="`/checkout/${collection.id}`">
+                <div class="collection-item">
+                  <v-img :src="collection.image_name"></v-img>
+                  <p class="collection-name">{{ collection.collection }}</p>
+                  <p class="name">{{ collection.name }}</p>
+                </div>
+              </NuxtLink>
+            </div>
+          </VueSlickCarousel>
+        </v-col>
+
+        <v-col md="12" class="collection-list-wrapper" v-if="blueCollection.length">
+          <VueSlickCarousel v-bind="settings">
+            <div class="collection-item-wrapper" v-for="(collection, key) in blueCollection" :key="key">
+              <NuxtLink :to="`/checkout/${collection.id}`">
+                <div class="collection-item">
+                  <v-img :src="collection.image_name"></v-img>
+                  <p class="collection-name">{{ collection.collection }}</p>
+                  <p class="name">{{ collection.name }}</p>
+                </div>
+              </NuxtLink>
+            </div>
+          </VueSlickCarousel>
+        </v-col>
+
       </v-row>
     </v-container>
   </div>
@@ -93,6 +104,7 @@ import GreenCollection from "../../api/Green-collection.json"
 import OrangeCollection from "../../api/Orange-collection.json"
 import PinkCollection from "../../api/Pink-collection.json"
 import RedCollection from "../../api/Red-collection.json"
+import MultiColorColl from "../../api/multicolor-coll.json"
 import BlueColl from "../../api/blue-coll.json"
 import GreenColl from "../../api/green-coll.json"
 import OrangeColl from "../../api/orange-coll.json"
@@ -116,7 +128,7 @@ export default {
           "speed": 500,
           "slidesToShow": 4,
           "slidesToScroll": 4,
-          "initialSlide": 0,
+          // "initialSlide": 0,
           "responsive": [
             {
               "breakpoint": 1024,
@@ -136,8 +148,9 @@ export default {
               }
             },
             {
-              "breakpoint": 480,
+              "breakpoint": 550,
               "settings": {
+                // "centerMode": true,
                 "slidesToShow": 1,
                 "slidesToScroll": 1
               }
@@ -154,7 +167,7 @@ export default {
     }
   },
   mounted() {
-    this.multiColorCollection = MultiColorsCollection;
+    this.multiColorCollection = MultiColorColl;
     this.greenCollection = GreenColl;
     this.blueCollection = BlueColl;
     this.orangeCollection = OrangeColl;
@@ -192,18 +205,27 @@ export default {
           text-align: left;
           margin-top: 16px;
           text-decoration: none;
+          min-height: 75px;
         }
 
         .name {
           font-size: 18px;
-          font-family: 'Satoshi-Bold';
+          font-family: 'Satoshi-Bold', serif;
           text-align: left;
           color: #000;
           text-decoration: none;
-          margin-bottom: 50px;
+          margin-bottom: 30px;
+          min-height: 55px;
         }
       }
     }
+  }
+
+  .slick-dots {
+    padding: 0;
+  }
+  .slick-dots li {
+    margin: 0px !important;
   }
 
   .slick-dots li button:before {
@@ -248,7 +270,7 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .collections-area h3 {
-    margin-top: 0;
+    margin-top: 20px;
     font-size: 24px;
   }
   .collections-area {
@@ -261,6 +283,9 @@ export default {
       display: none !important;
     }
   }
+}
 
+.collection-list-wrapper {
+  //margin-left: -25px;
 }
 </style>

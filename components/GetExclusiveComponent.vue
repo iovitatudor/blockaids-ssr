@@ -9,7 +9,7 @@
           </h3>
           <p>100% of money collected from donations under this NFT campaign will be distributed for needs of people
             living with AIDS and from groups at risk (drug users, LGBT, sexual workers, etc.) </p>
-          <v-btn class="btn-standart">Select NFT</v-btn>
+          <a href="https://avatar.blockaids.online/" class="btn-standart">Select NFT</a>
         </v-col>
         <v-col md="6">
           <v-img src="images/Frame 362.png" width="100%"></v-img>

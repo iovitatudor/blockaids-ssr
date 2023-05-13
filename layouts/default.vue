@@ -20,4 +20,9 @@ export default {
 }
 </script>
 
+<style>
+.main-area {
+  margin-top: 73px;
+}
+</style>
 

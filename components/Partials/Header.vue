@@ -8,7 +8,7 @@
     >
       <v-spacer class="menu-list-desktop"></v-spacer>
       <NuxtLink to="/" class="logo">
-        <v-img src="images/logo.png" width="200px"></v-img>
+        <v-img src="/images/logo.png" width="200px"></v-img>
       </NuxtLink>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
@@ -35,7 +35,7 @@
       class="drawer-mobile"
     >
       <NuxtLink to="/" class="logo logo-drawer">
-        <v-img src="images/logo.png" width="200px"></v-img>
+        <v-img src="/images/logo.png" width="200px"></v-img>
       </NuxtLink>
       <v-list dense>
         <v-list-item>

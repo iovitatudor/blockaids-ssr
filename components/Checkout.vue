@@ -3,25 +3,25 @@
     <v-col class="buttons-wrapper">
       <no-ssr>
         <crossmint-pay-button
-          clientId="3bb175c4-97f6-46a7-a47b-aca37029590e"
-          mintConfig='{"type":"erc-721","totalPrice":"0.001","_quantity":"1","quantity":"1"}'
-          environment="staging"
+          clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
+          mintConfig='{"type":"erc-721","totalPrice":"0.0001","_quantity":"1","quantity":"1"}'
+          environment="production"
           paymentMethod="ETH"
           class="xmint-btn"
         />
 
         <crossmint-pay-button
-          clientId="3bb175c4-97f6-46a7-a47b-aca37029590e"
-          mintConfig='{"type":"erc-721","totalPrice":"0.001","_quantity":"1","quantity":"1"}'
-          environment="staging"
+          clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
+          mintConfig='{"type":"erc-721","totalPrice":"0.0005","_quantity":"1","quantity":"1"}'
+          environment="production"
           paymentMethod="SOL"
           class="xmint-btn"
         />
 
         <crossmint-pay-button
-          clientId="3bb175c4-97f6-46a7-a47b-aca37029590e"
-          mintConfig='{"type":"erc-721","totalPrice":"0.10","_quantity":"1","quantity":"1"}'
-          environment="staging"
+          clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
+          mintConfig='{"type":"erc-721","totalPrice":"0.01","_quantity":"1","quantity":"1"}'
+          environment="production"
           class="xmint-btn"
         />
       </no-ssr>
@@ -35,6 +35,7 @@ import CrossmintPayButton from "@crossmint/client-sdk-vanilla-ui";
 export default {
   name: "Checkout",
   components: {CrossmintPayButton},
+  props: {collection: {type: Object}},
 }
 </script>
 
@@ -43,6 +44,7 @@ export default {
 .buttons-area {
   position: absolute;
   bottom: 0;
+  margin-left: -10px;
 }
 
 .xmint-btn {
@@ -73,6 +75,11 @@ export default {
 
   .buttons-wrapper {
     padding: 0;
+  }
+  .buttons-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

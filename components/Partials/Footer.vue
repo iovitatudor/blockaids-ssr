@@ -33,16 +33,16 @@
             <a href="mailto:info@blockaids.online">info@blockaids.online</a>
           </p>
           <a href="https://www.facebook.com/BLockAIDS" target="_blank" class="social-link">
-            <img src="images/Group 225.png" alt="">
+            <img src="/images/Group 225.png" alt="">
           </a>
           <a href="https://www.instagram.com/block.aids/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank" class="social-link">
-            <img src="images/Group 226.png" alt="">
+            <img src="/images/Group 226.png" alt="">
           </a>
           <a href="https://twitter.com/block_aids" target="_blank" class="social-link">
-            <img src="images/Group 297.png" alt="">
+            <img src="/images/Group 297.png" alt="">
           </a>
           <a href="https://discord.com/" target="_blank" class="social-link">
-            <img src="images/Group 300.png" alt="">
+            <img src="/images/Group 300.png" alt="">
           </a>
         </v-col>
       </v-row>

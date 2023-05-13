@@ -4,6 +4,9 @@
     <HowWorksComponent/>
     <GetExclusiveComponent/>
     <NFTCollectionComponent/>
+    <div class="text-center">
+      <NuxtLink to="/collections" class="btn-standart">View All Collections</NuxtLink>
+    </div>
     <AboutComponent/>
     <PartnersComponent/>
   </div>
@@ -29,3 +32,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.main-area {
+  margin-top: 73px;
+}
+</style>

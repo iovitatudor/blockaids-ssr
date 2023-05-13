@@ -5,7 +5,7 @@
       <p>A decentralized electronic ecosystem on the blockchain, that allows millions of people living with HIV to
         access their records, medicines, and services from any place in the world.</p>
       <v-img src="/images/image 52 1.png"></v-img>
-      <v-btn class="btn-standart">Read More</v-btn>
+      <a href="https://blockaids.world" class="btn-standart">Read More</a>
     </div>
   </div>
 </template>

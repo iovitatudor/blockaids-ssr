@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import NFTCollectionComponent from "../../components/NFTs/NFTCollectionComponent";
-import AboutComponent from "../../components/AboutComponent";
-import PartnersComponent from "../../components/PartnersComponent";
+import NFTCollectionComponent from "../components/NFTs/NFTCollectionComponent";
+import AboutComponent from "../components/AboutComponent";
+import PartnersComponent from "../components/PartnersComponent";
 
 export default {
   name: "collection",
@@ -18,4 +18,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>
