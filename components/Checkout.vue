@@ -4,7 +4,7 @@
       <no-ssr>
         <crossmint-pay-button
           clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
-          mintConfig='{"type":"erc-721","totalPrice":"0.0001","_quantity":"1","quantity":"1"}'
+          mintConfig='{"type":"erc-721","totalPrice":"0.2","_quantity":"1","quantity":"1"}'
           environment="production"
           paymentMethod="ETH"
           class="xmint-btn"
@@ -12,7 +12,7 @@
 
         <crossmint-pay-button
           clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
-          mintConfig='{"type":"erc-721","totalPrice":"0.0005","_quantity":"1","quantity":"1"}'
+          mintConfig='{"type":"erc-721","totalPrice":"0.2","_quantity":"1","quantity":"1"}'
           environment="production"
           paymentMethod="SOL"
           class="xmint-btn"
@@ -20,7 +20,7 @@
 
         <crossmint-pay-button
           clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
-          mintConfig='{"type":"erc-721","totalPrice":"0.01","_quantity":"1","quantity":"1"}'
+          mintConfig='{"type":"erc-721","totalPrice":"0.2","_quantity":"1","quantity":"1"}'
           environment="production"
           class="xmint-btn"
         />
