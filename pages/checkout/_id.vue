@@ -12,7 +12,7 @@
             <div>
               <h4>{{ collection.name }}</h4>
               <p class="collection">{{ collection.collection }}</p>
-              <p class="price">0.0001 ETH / 0.0005 SOL / 0.01 USD </p>
+              <p class="price">0.2 ETH / 0.2 SOL / 0.2 USD </p>
             </div>
             <div class="checkout-area-wrapper">
               <Checkout :collection="collection"/>
