@@ -122,7 +122,7 @@ export default {
     .collection {
       margin-top: 16px;
       color: #666666;
-      font-size: 14px;
+      font-size: 15px;
     }
 
     .price {
@@ -200,7 +200,7 @@ export default {
       .collection {
         margin-top: 16px;
         color: #666666;
-        font-size: 16px;
+        font-size: 15px;
       }
 
       .price {
