@@ -3,7 +3,7 @@
     <v-container>
       <v-row class="footer-area-inside">
         <v-col md="3" class="footer-logo">
-          <nuxt-link to="#">
+          <nuxt-link to="/">
             <img src="/images/logo.png" width="200px">
           </nuxt-link>
           <p>A decentralized electronic ecosystem on the blockchain</p>
@@ -11,20 +11,20 @@
         <v-col md="3" class="footer-menu">
           <ul>
             <li>
-              <nuxt-link to="#">NFT Collection</nuxt-link>
+              <nuxt-link to="/collections">NFT Collection</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="#">Avatar Generator</nuxt-link>
+              <a href="https://avatar.blockaids.online">Avatar Generator</a>
             </li>
           </ul>
         </v-col>
         <v-col md="3" class="footer-menu">
           <ul>
             <li>
-              <a href="https://blockaids.world/">About BlockAIDS</a>
+              <a href="https://blockaids.world/" target="_blank">About BlockAIDS</a>
             </li>
             <li>
-              <a href="https://blockaids.gitbook.io/blockaids-docs/">Docs</a>
+              <a href="https://blockaids.gitbook.io/blockaids-docs/" target="_blank">Docs</a>
             </li>
           </ul>
         </v-col>
@@ -35,7 +35,8 @@
           <a href="https://www.facebook.com/BLockAIDS" target="_blank" class="social-link">
             <img src="/images/Group 225.png" alt="">
           </a>
-          <a href="https://www.instagram.com/block.aids/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank" class="social-link">
+          <a href="https://www.instagram.com/block.aids/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank"
+             class="social-link">
             <img src="/images/Group 226.png" alt="">
           </a>
           <a href="https://twitter.com/block_aids" target="_blank" class="social-link">
@@ -122,6 +123,7 @@ export default {
     border-top: 1px solid #E8F8F6;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .footer-area {
     background-color: #f3fbfb;
@@ -155,6 +157,7 @@ export default {
       margin-bottom: 0;
       padding-top: 0;
       margin-top: 0;
+
       ul {
         list-style: none;
 
@@ -187,6 +190,7 @@ export default {
       padding: 18px;
       border-top: 1px solid #E8F8F6;
     }
+
     ul {
       padding: 0;
     }

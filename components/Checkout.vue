@@ -51,10 +51,16 @@ export default {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-right: 6px;
 }
 
 .xmint-btn::part(contentParagraph) {
-  width: 200px;
+  /*width: 200px;*/
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -76,10 +82,25 @@ export default {
   .buttons-wrapper {
     padding: 0;
   }
+
   .buttons-area {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .buttons-wrapper {
+    display: block;
+  }
+
+  .xmint-btn::part(contentParagraph) {
+    width: 280px;
+  }
+  .xmint-btn {
+    display: block;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 6px;
   }
 }
 </style>

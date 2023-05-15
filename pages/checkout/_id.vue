@@ -3,15 +3,15 @@
     <div class="checkout-area">
       <h3 class="text-center">Checkout</h3>
       <v-container class="checkout-area-inside" v-if="ready">
-        <v-row>
+        <v-row class="checkout-area-row">
           <v-col md="5">
             <v-img :src="collection.image_name" width="100%"></v-img>
           </v-col>
           <v-col md="1"></v-col>
-          <v-col md="5" class="checkout-details">
+          <v-col md="6" class="checkout-details">
             <div>
               <h4>{{ collection.name }}</h4>
-              <p class="collection">{{ collection.collection }}</p>
+              <p class="collection">{{ collection.description }}</p>
               <p class="price"> 5 USD </p>
             </div>
             <div class="checkout-area-wrapper">
@@ -87,6 +87,11 @@ export default {
 .main-area {
   margin-top: 73px;
 }
+.checkout-area-row {
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
 .checkout-area {
   padding-top: 80px;;
   background-color: #f3fbfb;
@@ -110,14 +115,14 @@ export default {
     }
 
     h4 {
-      font-size: 30px;
+      font-size: 26px;
       line-height: 1.3;
     }
 
     .collection {
       margin-top: 16px;
       color: #666666;
-      font-size: 18px;
+      font-size: 14px;
     }
 
     .price {
@@ -195,7 +200,7 @@ export default {
       .collection {
         margin-top: 16px;
         color: #666666;
-        font-size: 18px;
+        font-size: 16px;
       }
 
       .price {
@@ -239,9 +244,13 @@ export default {
   }
   .checkout-area-wrapper {
     width: 100%;
+    //border: 1px solid red;
   }
   .main-area {
     margin-top: 53px;
   }
+}
+.checkout-area-wrapper {
+  width: 100%;
 }
 </style>

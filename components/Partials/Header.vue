@@ -18,8 +18,8 @@
         <div class="text-right">
           <NuxtLink to="/collections" class="menu-link">NFT Collection</NuxtLink>
           <a href="https://avatar.blockaids.online" class="menu-link">Avatar Generator</a>
-          <a href="https://blockaids.world" class="menu-link">About BlockAIDS</a>
-          <a href="https://blockaids.gitbook.io/blockaids-docs" class="menu-link">Docs</a>
+          <a href="https://blockaids.world" class="menu-link" target="_blank">About BlockAIDS</a>
+          <a href="https://blockaids.gitbook.io/blockaids-docs" class="menu-link" target="_blank">Docs</a>
         </div>
       </div>
 
@@ -50,12 +50,12 @@
         </v-list-item>
         <v-list-item>
           <v-list-item-content>
-            <a href="https://blockaids.world/" class="menu-link">About BlockAIDS</a>
+            <a href="https://blockaids.world/" class="menu-link" target="_blank">About BlockAIDS</a>
           </v-list-item-content>
         </v-list-item>
         <v-list-item>
           <v-list-item-content>
-            <a href="https://blockaids.gitbook.io/blockaids-docs/" class="menu-link">Docs</a>
+            <a href="https://blockaids.gitbook.io/blockaids-docs/" class="menu-link" target="_blank">Docs</a>
           </v-list-item-content>
         </v-list-item>
       </v-list>

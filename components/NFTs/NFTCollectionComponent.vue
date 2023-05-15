@@ -1,5 +1,5 @@
 <template>
-  <div class="collections-area">
+  <div class="collections-area" id="our-collections">
     <v-container class="text-center">
       <v-row>
         <v-col md="12">
@@ -142,6 +142,7 @@ export default {
             {
               "breakpoint": 600,
               "settings": {
+                "dots": false,
                 "slidesToShow": 2,
                 "slidesToScroll": 2,
                 "initialSlide": 2
@@ -150,6 +151,7 @@ export default {
             {
               "breakpoint": 550,
               "settings": {
+                "dots": false,
                 // "centerMode": true,
                 "slidesToShow": 1,
                 "slidesToScroll": 1
@@ -224,6 +226,7 @@ export default {
   .slick-dots {
     padding: 0;
   }
+
   .slick-dots li {
     margin: 0px !important;
   }
@@ -280,7 +283,21 @@ export default {
     }
 
     .slick-arrow {
-      display: none !important;
+      width: 15px;
+    }
+
+    .slick-next {
+      right: -8px;
+    }
+
+    .slick-prev {
+      left: -8px;
+    }
+    .collection-list-wrapper {
+      margin-bottom: 25px;
+    }
+    .collection-item-wrapper a .collection-item {
+      margin: 0 18px;
     }
   }
 }
