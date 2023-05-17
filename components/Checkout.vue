@@ -3,7 +3,7 @@
     <v-col class="buttons-wrapper">
       <no-ssr>
         <crossmint-pay-button
-          clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
+          :clientId="collection.client_id"
           mintConfig='{"type":"erc-721","totalPrice":"5","_quantity":"1","quantity":"1"}'
           environment="production"
           paymentMethod="ETH"
@@ -11,7 +11,7 @@
         />
 
         <crossmint-pay-button
-          clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
+          :clientId="collection.client_id"
           mintConfig='{"type":"erc-721","totalPrice":"5","_quantity":"1","quantity":"1"}'
           environment="production"
           paymentMethod="SOL"
@@ -19,7 +19,7 @@
         />
 
         <crossmint-pay-button
-          clientId="922c2a6a-ae02-4201-a328-ca6aa755e62d"
+          :clientId="collection.client_id"
           mintConfig='{"type":"erc-721","totalPrice":"5","_quantity":"1","quantity":"1"}'
           environment="production"
           class="xmint-btn"
@@ -96,6 +96,7 @@ export default {
   .xmint-btn::part(contentParagraph) {
     width: 280px;
   }
+
   .xmint-btn {
     display: block;
     justify-content: center;

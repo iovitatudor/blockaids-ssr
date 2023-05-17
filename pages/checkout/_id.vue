@@ -29,12 +29,12 @@
 <script>
 import PartnersComponent from "../../components/PartnersComponent";
 import Checkout from "../../components/Checkout";
-import MultiColorColl from "../../api/multicolor-coll.json"
-import BlueColl from "../../api/blue-coll.json"
-import GreenColl from "../../api/green-coll.json"
-import OrangeColl from "../../api/orange-coll.json"
-import PinkColl from "../../api/pink-coll.json"
-import RedColl from "../../api/red-coll.json"
+import MultiColorColl from "../../api/multicolor-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import BlueColl from "../../api/blue-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import GreenColl from "../../api/green-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import OrangeColl from "../../api/orange-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import PinkColl from "../../api/pink-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import RedColl from "../../api/red-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
 
 export default {
   name: "checkout",

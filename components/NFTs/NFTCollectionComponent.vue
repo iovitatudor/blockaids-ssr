@@ -96,20 +96,13 @@
 </template>
 
 <script>
+import MultiColorColl from "../../api/multicolor-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import BlueColl from "../../api/blue-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import GreenColl from "../../api/green-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import OrangeColl from "../../api/orange-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import PinkColl from "../../api/pink-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
+import RedColl from "../../api/red-coll.json?v=d2e16e6ef52a45b7468f1da56bba1953"
 import NFTItemComponent from "./NFTItemComponent";
-import collections from "../../api/collections.json";
-import MultiColorsCollection from "../../api/2-colors-collection.json";
-import BlueCollection from "../../api/Blue-collection.json?cdmvdfk=vfd"
-import GreenCollection from "../../api/Green-collection.json"
-import OrangeCollection from "../../api/Orange-collection.json"
-import PinkCollection from "../../api/Pink-collection.json"
-import RedCollection from "../../api/Red-collection.json"
-import MultiColorColl from "../../api/multicolor-coll.json"
-import BlueColl from "../../api/blue-coll.json"
-import GreenColl from "../../api/green-coll.json"
-import OrangeColl from "../../api/orange-coll.json"
-import PinkColl from "../../api/pink-coll.json"
-import RedColl from "../../api/red-coll.json"
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
@@ -293,9 +286,11 @@ export default {
     .slick-prev {
       left: -8px;
     }
+
     .collection-list-wrapper {
       margin-bottom: 25px;
     }
+
     .collection-item-wrapper a .collection-item {
       margin: 0 18px;
     }
