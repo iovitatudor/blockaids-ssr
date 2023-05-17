@@ -17,7 +17,7 @@
       <div class="menu-list-desktop">
         <div class="text-right">
           <NuxtLink to="/collections" class="menu-link">NFT Collection</NuxtLink>
-          <a href="https://avatar.blockaids.online" class="menu-link">Avatar Generator</a>
+          <a href="https://avatar.blockaids.world" class="menu-link">Avatar Generator</a>
           <a href="https://blockaids.world" class="menu-link" target="_blank">About BlockAIDS</a>
           <a href="https://blockaids.gitbook.io/blockaids-docs" class="menu-link" target="_blank">Docs</a>
         </div>
@@ -45,7 +45,7 @@
         </v-list-item>
         <v-list-item>
           <v-list-item-content>
-            <a href="https://avatar.blockaids.online" class="menu-link">Avatar Generator</a>
+            <a href="https://avatar.blockaids.world" class="menu-link">Avatar Generator</a>
           </v-list-item-content>
         </v-list-item>
         <v-list-item>

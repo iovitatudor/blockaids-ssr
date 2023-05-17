@@ -31,7 +31,7 @@
               </div>
             </v-col>
             <v-col md="12"><br>
-              <a href="https://avatar.blockaids.online/" class="btn-standart-red">Generate Your Avatar Now</a>
+              <a href="https://avatar.blockaids.world/" class="btn-standart-red">Generate Your Avatar Now</a>
             </v-col>
           </v-row>
         </v-col>

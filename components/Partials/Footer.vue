@@ -14,7 +14,7 @@
               <nuxt-link to="/collections">NFT Collection</nuxt-link>
             </li>
             <li>
-              <a href="https://avatar.blockaids.online">Avatar Generator</a>
+              <a href="https://avatar.blockaids.world">Avatar Generator</a>
             </li>
           </ul>
         </v-col>
