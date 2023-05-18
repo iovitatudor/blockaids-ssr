@@ -37,7 +37,25 @@ export default {
 
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/gtm',
+    [
+      'nuxt-facebook-pixel-module', {
+      track: 'PageView',
+      pixelId: '1242686519689591',
+      autoPageView: true,
+      disabled: false
+    }],
   ],
+
+  gtm: {
+    id: 'G-4RQY9H7DJD', // Used as fallback if no runtime config is provided
+  },
+
+  publicRuntimeConfig: {
+    gtm: {
+      id: 'G-4RQY9H7DJD',
+    }
+  },
 
   axios: {
     baseURL: '/',

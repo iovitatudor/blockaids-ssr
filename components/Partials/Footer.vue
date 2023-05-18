@@ -49,7 +49,7 @@
       </v-row>
       <v-row class="copyright text-center">
         <v-col>
-          © 2023 blockaids. All rights reserved
+          © 2023 BlockAIDS. All rights reserved
         </v-col>
       </v-row>
     </v-container>

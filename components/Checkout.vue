@@ -19,9 +19,9 @@
         />
 
         <crossmint-pay-button
-          :clientId="collection.client_id"
-          mintConfig='{"type":"erc-721","totalPrice":"0.2","_quantity":"1","quantity":"1"}'
-          environment="production"
+          clientId="111c711d-2785-405d-8a3f-c3e0259e53ba"
+          mintConfig='{"type":"erc-721","totalPrice":"0.1","_quantity":"1","quantity":"1"}'
+          environment="staging"
           class="xmint-btn"
         />
       </no-ssr>

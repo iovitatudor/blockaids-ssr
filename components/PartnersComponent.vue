@@ -13,8 +13,11 @@
             <div><img src="/images/partners/hac.png" alt=""></div>
             <div><img src="/images/partners/positive-initiative.png" alt=""></div>
             <div><img src="/images/partners/SEH.png" alt=""></div>
-            <div><img src="/images/partners/Group%20227.png" alt=""></div>
           </div>
+          <div class="powered-partner">
+            <img src="/images/UNAIDS-official-logo.png" alt="">
+          </div>
+
         </v-col>
       </v-row>
     </v-container>
@@ -88,5 +91,9 @@ export default {
       width: 80%;
     }
   }
+}
+.powered-partner img {
+  max-width: 280px;
+  margin-top: 20px;
 }
 </style>

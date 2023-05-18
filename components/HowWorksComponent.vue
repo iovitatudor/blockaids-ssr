@@ -4,7 +4,9 @@
       <v-row class="works-row">
         <v-col md="12" col="12">
           <h3>How it works</h3>
-          <h4>Support people living with HIV, add our distinctive sign to Your avatar</h4>
+          <h4>Support people living with HIV, add to Your avatar the red ribbon - an internationally recognized symbol
+            for AIDS awareness, worn by people throughout the year in support of people living with HIV and in
+            remembrance of those who have died.</h4>
         </v-col>
         <v-col md="1"></v-col>
         <v-col md="10">
@@ -58,7 +60,7 @@ export default {
   }
 
   h4 {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 20px;
     color: #4D4D4D;
     font-weight: normal;
