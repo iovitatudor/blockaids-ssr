@@ -20,7 +20,9 @@
           <a href="https://avatar.blockaids.world" class="menu-link">Avatar Generator</a>
           <a href="https://blockaids.world" class="menu-link" target="_blank">About BlockAIDS</a>
           <a href="https://blockaids.gitbook.io/blockaids-docs" class="menu-link" target="_blank">Docs</a>
+          <a href="https://giveth.io/donate/blockaids" target="_blank" class="btn-min">Donate</a>
         </div>
+
       </div>
 
       <v-spacer></v-spacer>
@@ -58,6 +60,12 @@
             <a href="https://blockaids.gitbook.io/blockaids-docs/" class="menu-link" target="_blank">Docs</a>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item>
+          <v-list-item-content>
+            <a href="https://giveth.io/donate/blockaids" target="_blank" class="btn-min">Donate</a>
+          </v-list-item-content>
+        </v-list-item>
+
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -132,5 +140,18 @@ export default {
   .v-image {
     width: 150px !important;
   }
+}
+.btn-min {
+  background-color: #3AB6AB;
+  box-shadow: 0px 6px 12px -6px rgba(58, 182, 171, 0.08), 0px 8px 24px -4px rgba(58, 182, 171, 0.08) !important;
+  border-radius: 8px;
+  color: #F3FBFB !important;
+  font-weight: 700;
+  padding: 12px 20px;
+  text-decoration: none;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
 }
 </style>

@@ -9,10 +9,10 @@
             <span class="red-text">with AIDS</span>
           </h1>
           <h2>
-            100% of money collected from donations under this NFT campaign will be distributed for needs of people
-            living with AIDS and from groups at risk (drug users, LGBT, sexual workers, etc.)
+            100% of the money collected from donations under this NFT campaign will be distributed for the needs of
+            people living with AIDS and from groups at risk (drug users, LGBT, sex workers, etc.)
           </h2>
-          <v-btn class="btn-standart">Donate Now</v-btn>
+          <a href="https://giveth.io/donate/blockaids" target="_blank" class="btn-standart">Donate Now</a>
         </v-col>
         <v-col class="md-1"></v-col>
         <v-col md="5">
@@ -32,10 +32,10 @@
             <span class="red-text">with AIDS</span>
           </h1>
           <h2>
-            100% of money collected from donations under this NFT campaign will be distributed for needs of people
-            living with AIDS and from groups at risk (drug users, LGBT, sexual workers, etc.)
+            100% of the money collected from donations under this NFT campaign will be distributed for the needs of
+            people living with AIDS and from groups at risk (drug users, LGBT, sex workers, etc.)
           </h2>
-          <v-btn class="btn-standart">Donate Now</v-btn>
+          <a href="https://giveth.io/donate/blockaids" target="_blank" class="btn-standart">Donate Now</a>
         </v-col>
       </v-row>
     </v-container>
@@ -52,9 +52,11 @@ export default {
 .desktop-only {
   display: block;
 }
+
 .mobile-only {
   display: none;
 }
+
 .main-banner {
   display: flex;
   justify-content: center;
@@ -100,14 +102,17 @@ export default {
     display: block;
     margin-top: -10px;
     padding-bottom: 48px;
+
     .main-inside {
       display: block;
     }
+
     h1 {
       font-size: 24px;
       line-height: 1.4;
       margin-bottom: 16px;
     }
+
     h2 {
       margin-bottom: 32px;
     }
