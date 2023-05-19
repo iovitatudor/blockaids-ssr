@@ -4,7 +4,7 @@
       <no-ssr>
         <crossmint-pay-button
           :clientId="collection.client_id"
-          mintConfig='{"type":"erc-721","totalPrice":"0.2","_quantity":"1","quantity":"1"}'
+          mintConfig='{"type":"erc-721","totalPrice":"0.02","_quantity":"1","quantity":"1"}'
           environment="production"
           paymentMethod="ETH"
           class="xmint-btn"
