@@ -6,11 +6,11 @@
           <h1>
             <span class="green-text">Help us</span>
             stop AIDS worldwide. Support people living
-            <span class="red-text">with AIDS</span>
+            <span class="red-text">with HIV</span>
           </h1>
           <h2>
             100% of the money collected from donations under this NFT campaign will be distributed for the needs of
-            people living with AIDS and from groups at risk (drug users, LGBT, sex workers, etc.)
+            people living with AIDS and from key affected populations (drug users, LGBT, sex workers, etc.)
           </h2>
           <a href="https://giveth.io/donate/blockaids" target="_blank" class="btn-standart">Donate Now</a>
         </v-col>
@@ -29,11 +29,11 @@
           <h1>
             <span class="green-text">Help us</span>
             stop AIDS worldwide. Support people living
-            <span class="red-text">with AIDS</span>
+            <span class="red-text">with HIV</span>
           </h1>
           <h2>
             100% of the money collected from donations under this NFT campaign will be distributed for the needs of
-            people living with AIDS and from groups at risk (drug users, LGBT, sex workers, etc.)
+            people living with AIDS and from key affected populations (drug users, LGBT, sex workers, etc.)
           </h2>
           <a href="https://giveth.io/donate/blockaids" target="_blank" class="btn-standart">Donate Now</a>
         </v-col>

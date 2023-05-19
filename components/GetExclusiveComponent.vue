@@ -8,7 +8,7 @@
             dedicated to people living <span class="red-text">with HIV</span>
           </h3>
           <p>100% of money collected from donations under this NFT campaign will be distributed for needs of people
-            living with AIDS and from groups at risk (drug users, LGBT, sex workers, etc.) </p>
+            living with AIDS and from key affected populations (drug users, LGBT, sex workers, etc.) </p>
           <a href="#our-collections" class="btn-standart">Select NFT</a>
         </v-col>
         <v-col md="6">

@@ -1,9 +1,10 @@
 <template>
   <div class="about-area">
     <div class="about-area-inside">
-      <h3>About BlockAIDS platform</h3>
-      <p>A decentralized electronic ecosystem on the blockchain, that allows millions of people living with HIV to
-        access their records, medicines, and services from any place in the world.</p>
+      <h3>About BlockAIDS</h3>
+      <p>A decentralized electronic ecosystem on the blockchain, that amplifies response measures to HIV/AIDS worldwide,
+        utilizing Web 3.0 technologies and allows millions of people living with HIV to access their records, medicines,
+        and services from any place in the world.</p>
       <v-img src="/images/image 52 1.png"></v-img>
       <a href="https://blockaids.world" class="btn-standart" target="_blank">Read More</a>
     </div>
@@ -55,6 +56,7 @@ export default {
       max-width: 100%;
       margin: 0 auto;
       padding: 40px 20px;
+
       h3 {
         margin-bottom: 20px;
         font-size: 24px;

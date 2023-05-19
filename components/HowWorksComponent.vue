@@ -5,8 +5,7 @@
         <v-col md="12" col="12">
           <h3>How it works</h3>
           <h4>Support people living with HIV, add to Your avatar the red ribbon - an internationally recognized symbol
-            for AIDS awareness, worn by people throughout the year in support of people living with HIV and in
-            remembrance of those who have died.</h4>
+            for AIDS awareness, worn by people throughout the year in support of people living with HIV and key affected populations.</h4>
         </v-col>
         <v-col md="1"></v-col>
         <v-col md="10">
