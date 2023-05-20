@@ -12,7 +12,7 @@
             <div>
               <h4>{{ collection.name }}</h4>
               <p class="collection">{{ collection.description }}</p>
-              <p class="price"> 0.2 USD </p>
+              <p class="price"> 30 MATIC </p>
             </div>
             <div class="checkout-area-wrapper">
               <Checkout :collection="collection"/>
